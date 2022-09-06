@@ -7,7 +7,7 @@ import React from "react";
 import { search } from "services/search.js";
 
 export default function Component({ query, results }) {
-  const {t} = useI18N()
+  const { t } = useI18N();
   return (
     <>
       <Head>
@@ -15,8 +15,7 @@ export default function Component({ query, results }) {
         <meta name="description" content={`Results for {query}`} />
       </Head>
       <Layout>
-        <h1>{t('SEARCH_RESULTS_TITLE',results.length, query)}
-        </h1>
+        <h1>{t("SEARCH_RESULTS_TITLE", results.length, query)}</h1>
         {results.map((result) => {
           return (
             <Link key={result.id} href={`/comic/${result.id}`}>
