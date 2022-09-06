@@ -14,7 +14,7 @@ export default function Home({ latestComics }) {
         <meta name="description" content="Comics for developers" />
       </Head>
       <Layout>
-        <h2 className="text-3xl font-bold text-center mb-2">
+        <h2 className="text-3xl font-bold text-center mb-2">Este de prueba 
           {t("LATEST_COMICS")}
         </h2>
         <section
